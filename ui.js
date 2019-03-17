@@ -1,7 +1,7 @@
 class UI {
     constructor() {
         this.copyright = document.querySelector('.copyright');
-        this.comics = document.querySelector('.comics');
+        this.comics = document.querySelector('.comics ul');
     }
 
     paint(marvel) { 
@@ -14,7 +14,7 @@ class UI {
         //only comics from api
         const comics = marvel.data.results; 
         //show marvel comics
-        let output = "<div class='container'><ul>";
+        let output = '';
 
         comics.forEach(comic => {
             output +=
@@ -26,8 +26,7 @@ class UI {
                 </li>
             `;
             
-				});
-				output += "</div></ul>"; 
+				}); 
         this.comics.innerHTML = output;
     }
 }
