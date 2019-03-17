@@ -27,10 +27,7 @@ class UI {
             `;
             
 				});
-				output += "</div></ul>";
-				
-				console.log(comics); 
-
+				output += "</div></ul>"; 
         this.comics.innerHTML = output;
     }
 }
