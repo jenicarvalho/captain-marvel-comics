@@ -5,7 +5,5 @@ const marvel = new Marvel();
 const ui = new UI();
 
 marvel.getComics()
-      .then( results => {
-        ui.paint(results);
-      })
-      .catch( error => console.log(error));
+      .then(ui.paint)
+      .catch(console.error);
