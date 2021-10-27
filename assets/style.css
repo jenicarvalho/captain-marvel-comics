@@ -1,3 +1,9 @@
+* {
+    overflow-x: hidden;
+  }
+  
+
+
 a { color: #e83037  !important }
 
 /* copyright */
@@ -24,6 +30,13 @@ a { color: #e83037  !important }
     padding: 150px 0;
     margin-top: 65px;
     color: #202020;
+}
+
+@media (max-width: 1000px) {
+    .captain-marvel{
+        height: 100vh;
+    }
+  
 }
 
 .captain-marvel h2 { text-transform: uppercase }
